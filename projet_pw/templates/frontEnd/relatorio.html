@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <link rel="stylesheet" href="/projet_pw/templates/backOffice/relatorio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <h1>RELATORIO</h1>
+   
+    <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projeto.html">Projects</a></li>
+          
+        
+        </ul>
+    </nav>
+    
+
+    <div class="container">
+        <ul> 
+            <button class="same-size-button"><a href="perfil.html"> Perfil</a></button>
+            <button class="same-size-button"><a href="meusprojetos.html"> Meus Projetos</a></button>
+            <button class="same-size-button"><a href="Equipas.html"> Equipas de Trabalho</a></button>
+            <button class="same-size-button"><a href="tarefas.html"> Tarefas e Cronogramas</a></button>
+           
+            
+        </ul>
+        <img src="/projet_pw/lib/pngtree-user-profile-avatar-png-image_10211467-Photoroom.png-Photoroom.png" alt="Imagem">
+    
+    
+    <div>
+        <div class="tabela">
+            <div class="texto">
+                <label for="tarefa"><a href="#" id="tarefa">+ Nova Tarefa</a></label>          
+        </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th> Project Name </th>
+                        <th> Name </th>
+                        <th> Criticize</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+   </div>
+
+   <div class="popup-overlay" id="popup">
+    <div class="popup-content">
+        <h1 class="h1">Novo Relatorio</h1>
+            <p>
+                <input type="text" placeholder="Nome do Projeto">
+            </p>
+            <p>
+                <input type="text" placeholder="Nome">
+            </p> 
+            <p>
+                <input type="text" placeholder="Criticas">
+            </p> 
+    
+        <p>
+            <button class="esp" onclick="fecharPopup()">Save</button>
+        </p>
+            
+    </div>
+</div>
+
+
+<script>
+    function abrirPopup() {
+        document.getElementById("popup").style.display = "flex";
+    }
+
+    function fecharPopup() {
+        document.getElementById("popup").style.display = "none";
+    }
+
+    document.getElementById("tarefa").addEventListener("click", function(event) {
+        event.preventDefault(); 
+        abrirPopup(); 
+    });
+</script>
+
+</body>
+</html>

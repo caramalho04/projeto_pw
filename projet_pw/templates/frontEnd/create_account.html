@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="/projet_pw/templates/backOffice/create.css">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projeto.html">Projects</a></li>
+        
+        
+        </ul>
+    </nav>
+    <div class="centrar">
+        <h1>Create Account</h1>
+        <input type="text" placeholder="First Name">
+        <p>
+            <input type="text" placeholder="Last Name">
+        </p>
+        <p>
+            <input type="text" placeholder="Email">
+        </p>
+        <p>
+            <input type="text" placeholder="Password">
+        </p>
+        <p>
+            <input type="text" placeholder="Confirme Password">
+        </p>
+        
+        <div class="texto">
+            <input class="checkbox" type="checkbox" id="termos">
+                <label for="termos">Aceito os <a href="#" id="link-termos">Termos e Condições</a></label>          
+        </div>
+
+            
+            
+        <p>
+            <button><a href="perfil.html">Create Account</a></button>
+        </p>
+    </div>
+
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            <h2>Termos e Condições</h2>
+            <p>
+                Bem-vindo ao nosso site de gestão de projetos acadêmicos! Antes de começar a utilizar nossos serviços, pedimos que você leia atentamente estes termos e condições.
+            </p>
+            <p>    
+                <h3>1. Aceitação dos Termos</h3>
+            </p>
+            <p>   
+                Ao criar uma conta e utilizar nossos serviços, você concorda em cumprir estes termos e condições de uso. Se você não concordar com algum dos termos, não utilize nosso site.
+            </p>
+            <p>    
+                <h3>2. Privacidade</h3>
+            </p>
+            <p>   
+                Respeitamos a privacidade dos nossos usuários. Todas as informações pessoais fornecidas durante o uso do site serão tratadas de acordo com nossa Política de Privacidade.
+            </p>
+            <p>    
+                <h3>3. Responsabilidades do Usuário</h3>
+            </p>
+                <p>    
+                Você é responsável por todas as atividades realizadas com sua conta. Mantenha sua password segura e não a partilhe com terceiros.
+            </p>
+            <p>    
+                <h3>4. Uso Aceitável</h3>
+            </p>
+            <p>    
+                Você concorda em utilizar nosso site de maneira ética e legal. Não faça uso indevido dos nossos serviços, incluindo, mas não se limitando a, violar leis aplicáveis ou infringir direitos de terceiros.
+            </p>
+            <p>    
+                <h3>5. Conteúdo Gerado pelo Usuário</h3>
+            </p>
+            <p>
+                Ao enviar conteúdo para nosso site (como projetos acadêmicos, comentários ou mensagens), você concede a nós uma licença não exclusiva para utilizar, reproduzir e distribuir esse conteúdo dentro do contexto do nosso site.
+            </p>
+            <p>    
+                <h3>6. Propriedade Intelectual</h3>
+            </p>
+            <p>   
+                Todo o conteúdo disponibilizado em nosso site, incluindo textos, gráficos, logotipos, ícones, imagens, downloads digitais e software, é de propriedade exclusiva nossa ou de nossos licenciadores e está protegido por leis de direitos autorais.
+            </p>
+            <p>    
+                Ao criar uma conta em nosso site, você declara que leu, compreendeu e concorda com estes termos e condições de uso.
+            </p>    
+            
+            <button onclick="fecharPopup()">Fechar</button>
+        </div>
+    </div>
+    
+
+    <script>
+        function abrirPopup() {
+            document.getElementById("popup").style.display = "flex";
+        }
+
+        function fecharPopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+
+        document.getElementById("link-termos").addEventListener("click", function(event) {
+            event.preventDefault(); 
+            abrirPopup(); 
+        });
+    </script>
+</body>
+</html>
